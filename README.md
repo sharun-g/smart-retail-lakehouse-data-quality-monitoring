@@ -222,7 +222,7 @@ These datasets can be directly connected to visualization tools such as **Power 
 # ▶️ How to Run
 
 1. Upload the Olist dataset into Unity Catalog Volumes.
-2. Execute the **00_master_pipeline** notebook.
+2. Execute the **master_pipeline** notebook.
 3. The pipeline automatically runs:
    - Bronze Layer
    - Silver Layer
@@ -230,6 +230,19 @@ These datasets can be directly connected to visualization tools such as **Power 
    - SNS Notification
 4. Receive the ETL execution report via Amazon SNS.
 
+---
+## AWS Configuration
+
+Before running the project, update the AWS credentials in the notebooks:
+
+```python
+AWS_ACCESS_KEY = "YOUR_AWS_ACCESS_KEY"
+AWS_SECRET_KEY = "YOUR_AWS_SECRET_KEY"
+AWS_REGION = "YOUR_REGION like us-east-1"
+TOPIC_ARN = "YOUR_SNS_TOPIC_ARN"
+```
+
+Ensure your AWS IAM user has permission to publish messages to Amazon SNS.
 ---
 
 # 🔮 Future Enhancements

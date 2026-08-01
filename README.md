@@ -171,8 +171,9 @@ smart-retail-lakehouse-data-quality-monitoring
 ├── architecture/
 │   └── architecture.png
 │
-├── screenshots/
-│   └── sns_notification.png
+├── results/
+│   ├── pipeline_failes.png
+|   └── pipeline_success.pdf
 ```
 
 ---
